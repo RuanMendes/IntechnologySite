@@ -1,0 +1,375 @@
+/**********************************************************************
+************************ PRIMARY BREAKPOINTS **************************
+***********************************************************************/
+
+@media screen and (max-width: 1120px) {
+    header nav .menu ul li a {
+        padding-top: 42px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+    @media screen and (max-width: 768px) {
+        header .background {
+            transform: skewY(0);
+            transition: .5s;
+        }
+
+        article #about .left-content {
+            width: 100% !important;
+            float: none;
+            height: 100px;
+        }
+
+        article #about .left-content h1 {
+            margin: 50px auto 20px auto;
+            width: 100%;
+        }
+
+        article #about .right-content {
+            width: 100%;
+            float: none;
+            margin: 20px auto;
+        }
+
+        article #about .right-content p {
+            width: 100%;
+            margin: 10px auto;
+            padding: 20px 10px;
+        }
+
+        article #services h1 {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        article #partness h1 {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 392px) {
+        article #contact {
+            height: 250vh !important;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        article #about .right-content {
+            width: 80% !important;
+        }
+
+        article #partness {
+            height: 300vh;
+        }
+
+        article #partness .part-itens .box-one,
+        article #partness .part-itens .box-two,
+        article #partness .part-itens .box-three,
+        article #partness .part-itens .box-four,
+        article #partness .part-itens .box-five,
+        article #partness .part-itens .box-six,
+        article #partness .part-itens .box-seven,
+        article #partness .part-itens .box-eight,
+        article #partness .part-itens .box-nine {
+            width: 90%;
+            float: none;
+            height: 200px;
+            margin: 10px auto;
+            display: block;
+        }
+
+        article #partness .part-itens .box-one h2,
+        article #partness .part-itens .box-two h2,
+        article #partness .part-itens .box-three h2,
+        article #partness .part-itens .box-four h2,
+        article #partness .part-itens .box-five h2,
+        article #partness .part-itens .box-six h2,
+        article #partness .part-itens .box-seven h2,
+        article #partness .part-itens .box-eight h2,
+        article #partness .part-itens .box-nine h2 {
+            margin-top: 1%;
+        }
+
+        article #contact {
+            height: 210vh;
+        }
+
+        article #contact .contact-left-content,
+        article #contact .contact-right-content {
+            width: 95%;
+            margin: 0 auto;
+            float: none;
+            height: 35%;
+        }
+
+        article #services .itens .item-one,
+        article #services .itens .item-three,
+        article #services .itens .item-two,
+        article #services .itens .item-four {
+            width: 90%;
+            float: none;
+            margin: 20px auto;
+            height: 20%;
+        }
+
+        article #services .itens .item-one h2,
+        article #services .itens .item-three h2,
+        article #services .itens .item-two h2,
+        article #services .itens .item-four h2 {
+            margin-top: 2%;
+        }
+
+        article #services {
+            max-height: 180vh;
+            min-height: 210vh;
+        }
+
+        article #services .right img {
+            height: auto;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 30px;
+            float: none;
+        }
+
+        .left {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            margin: 0 auto;
+            float: right;
+        }
+
+        .right {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            margin: 0 auto;
+            float: right;
+        }
+
+        article #team h1 {
+            width: 40%;
+            margin-left: 30%;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        header {
+            height: 60vh;
+        }
+        header section {
+            height: 50vh;
+        }
+
+        header section img {
+            width: 95%;
+            height: auto;
+        }
+
+        .fa-envelope, .fa-at, .fa-mail-bulk {
+            padding: 8px !important;
+            margin: 0 5px;
+        }
+
+        .space {
+            padding: 5px !important;
+        }
+
+    }
+
+
+    @media screen and (max-width: 1150px) {
+        .active {
+            display: block !important;
+            transition: .4s;
+        }
+
+        header nav .little-menu {
+            display: block;
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            float: right;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        header nav {
+            height: 60px !important;
+        }
+
+        header nav .menu {
+            width: 30% !important;
+            margin: 0 !important;
+        }
+
+        header nav .menu ul {
+            width: 100%;
+            display: none;
+            background-color: #eee;
+            position: relative !important;
+            z-index: -1;
+        }
+
+        header nav .menu ul li {
+            display: block;
+            width: 100%;
+            height: 60px;
+        }
+
+        header nav .menu ul li a {
+            width: 100%;
+            line-height: 50px !important;
+        }
+
+        header nav .little-menu .fa-bars {
+            font-size: 40px;
+            color: var(--green);
+            margin-left: 50px;
+        }
+
+        article #why h1 {
+            width: 55%;
+            margin: 0 auto;
+        }
+
+        article #why .help-text {
+            width: 90%;
+        }
+
+        article #about .left-content {
+            width: 40%;
+        }
+
+        article #about .left-content h1 {
+            margin-left: 120px;
+        }
+
+        article #about .right-content {
+            height: 70%;
+            width: 60%;
+        }
+
+        article #team {
+            width: 100%;
+            height: auto;
+            font-size: 15px;
+        }
+
+        article #services {
+            text-align: center;
+        }
+
+    }
+
+
+@media (min-width: 568px) {
+    .main-block {
+        flex-direction: row;
+    }
+
+    .left-part,
+    form {
+        width: 50%;
+    }
+
+    .fa-envelope {
+        margin-top: 0;
+        margin-left: 20%;
+    }
+
+    .fa-at {
+        margin-top: -10%;
+        margin-left: 65%;
+    }
+
+    .fa-mail-bulk {
+        margin-top: 2%;
+        margin-left: 28%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    article #why h1 {
+        width: 80%;
+        font-size: 25px;
+    }
+
+    .panel {
+        width: 80%;
+    }
+
+    .accordion h5 {
+        font-size: 14px;
+    }
+
+    article #team h1 {
+        width: 90%;
+        font-size: 25px;
+        margin-left: 5%;
+    }
+
+    article #services h1 {
+        width: 90%;
+        font-size: 25px;
+        margin-left: 5%;
+    }
+
+    article #partness h1 {
+        width: 90%;
+        font-size: 25px;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    article #team .ruan {
+        margin: 0 20% 0 20%;
+        width: 60% !important;
+        float: none;
+    }
+
+    article #team .rafa {
+        margin: 0 20% 0 20%;
+        width: 60% !important;
+        float: none;
+    }
+
+    article #team .leo {
+        margin: 0 20% 0 20%;
+        width: 60% !important;
+        float: none;
+    }
+
+}
+
+
+@media screen and (max-width: 570px) {
+    #services {
+        min-height: 120vh;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    header .navbar .menu {
+        width: 40% !important;
+    }
+
+
+    header .navbar .menu ul li a {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header .navbar .menu {
+        width: 50% !important;
+    }
+}

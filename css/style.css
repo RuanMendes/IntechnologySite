@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:200,300,400,500,600,700,800&display=swap');
+
+/* CUSTOM PROPERTIES */
+
+:root {
+    --green: #34AF2D;
+    --lightgreen: #23CE6B;
+    --white: rgb(247, 255, 244);
+    --black: #000;
+    --platinum: #DFE0E2;
+    --ghostwhite: #F6F8FF;
+    --darkblack: #071013;
+    --orange: rgb(255, 102, 0);
+}
+
+
+/**********************/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Oxanium' !important;
+    background-image: linear-gradient(to bottom, var(--darkblack), var(--black)) !important;
+    height: 100%;
+}
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! UTILITIES !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+.clear {
+    clear: both;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg, rgb(51, 155, 51), var(--lightgreen));
+    transform: skewY(8deg);
+    transform-origin: 100%;
+}
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! END UTILITIES !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! START CUSTOM CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! START HEADER CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/Scattered-Forcefields.svg");
+    background-attachment: fixed;
+}
+
+header .navbar {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+}
+
+header .navbar .menu {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    background: #eee !important;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+header .navbar .menu ul {
+    list-style-position: inside;
+    text-align: center;
+    background-color: #eee;
+}
+
+header .navbar .menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: -4px;
+    cursor: pointer;
+    transition: .4s;
+    color: var(--black);
+}
+
+header .navbar .menu ul li a:hover {
+    transition: .4s;
+    background-color: var(--black);
+    color: var(--green);
+}
+
+header .navbar .menu ul li #forum {
+    transition: .5s;
+}
+
+header .navbar .menu ul li #forum:hover {
+    background-color: black !important;
+    color: white !important;
+    padding: 30px 30px;
+    transition: .4s;
+}
+
+header .navbar .menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 100px;
+    color: var(--black);
+    padding: 20px 30px;
+    transition: .3s;
+}
+
+header section {
+    color: var(--black);
+    width: 96%;
+    height: 80vh;
+    top: 18%;
+    left: 2%;
+    text-align: center;
+    right: 2%;
+    position: absolute;
+}
+
+header section img {
+    width: 55%;
+    margin-top: 50px;
+}
+
+header nav .little-menu {
+    display: none;
+}
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! END HEADER CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! START ARTICLE CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+article {
+    width: 100%;
+    background-color: var(--darkblack);
+    position: relative;
+}
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! START SECTION #ABOUT CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+article #about {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/Scattered-Forcefields.svg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--platinum);
+    padding-top: 110px;
+}
+
+article #about .left-content {
+    position: relative;
+    z-index: 33333;
+    width: 50%;
+    float: left;
+    height: 300px;
+}
+
+article #about .left-content h1 {
+    color: lime;
+    margin-right: 0px;
+    margin-left: 200px;
+    width: 90%;
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 40px;
+    float: right;
+    text-align: center;
+}
+
+article #about .right-content {
+    position: relative;
+    width: 50%;
+    float: right;
+    height: 300px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+article #about .right-content p {
+    background-color: rgba(0, 0, 0, 1);
+    width: 60%;
+    color: var(--white);
+    margin: 100px auto;
+    padding: 40px 50px;
+    border-bottom: 4px solid;
+    border-bottom-color: var(--green);
+}
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! END SECTION #ABOUT CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! START SECTION #WHY CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+article #why {
+    width: 100%;
+    min-height: 85vh;
+    padding-top: 110px;
+    background-image: radial-gradient(#fff, #ddd, #bbb);
+}
+
+article #why h1 {
+    font-size: 40px;
+    border-bottom: 3px solid var(--green);
+    font-weight: normal;
+    text-align: center;
+    width: 35%;
+    text-align: center;
+    margin-left: 33%;
+    color: var(--black);
+}
+
+article #why .help-text {
+    width: 60%;
+    margin: 30px auto;
+    color: var(--platinum);
+}
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! END SECTION #WHY CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! START SECTION #TEAM CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+article #team {
+    width: 100%;
+    height: 100vh;
+    padding-top: 110px;
+}
+
+article #team .team-container {
+    width: 100%;
+    height: 100%;
+}
+
+article #team .team-container .ruan,
+article #team .team-container .rafa,
+article #team .team-container .leo {
+    width: 33.3%;
+    display: inline-block;
+    margin-right: -4px;
+    text-align: center;
+    margin-top: 50px;
+    color: var(--white);
+}
+
+article #team .team-container .ruan img,
+article #team .team-container .rafa img,
+article #team .team-container .leo img {
+    border: 4px solid var(--green);
+    box-shadow: 10px 5px rgba(0, 255, 0, 0.1);
+    transition: .5s;
+}
+
+.creator {
+    width: 70%;
+    height: auto;
+}
+
+article #team h1 {
+    font-size: 40px;
+    border-bottom: 3px solid var(--green);
+    color: var(--white);
+    font-weight: normal;
+    text-align: center;
+    width: 20%;
+    text-align: center;
+    margin-left: 40%;
+}
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! START SECTION #SERVICES CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+article #services {
+    width: 100%;
+    min-height: 120vh;
+    padding-top: 110px;
+}
+
+article #services h1 {
+    font-size: 40px;
+    border-bottom: 3px solid var(--green);
+    color: var(--white);
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+    font-weight: normal;
+}
+
+article #services .itens {
+    width: 100%;
+    height: 50%;
+}
+
+article #services .left img {
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+    border: 5px solid var(--green);
+    float: left;
+}
+
+article #services .right img {
+    height: auto;
+    width: 90%;
+    margin-right: 5%;
+    margin-top: 30px;
+    border: 5px solid var(--green);
+    float: right;
+}
+
+.left {
+    width: auto;
+    height: auto;
+    max-width: 45%;
+    margin-left: 5%;
+    float: left;
+}
+
+.right {
+    width: auto;
+    height: auto;
+    max-width: 45%;
+    margin-right: 5%;
+    float: right;
+}
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! END SECTION #SERVICES CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! START SECTION #PARTNESS CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+article #partness {
+    width: 100%;
+    height: 110vh;
+    background-color: var(--darkblack);
+    color: var(--green);
+    padding-top: 110px;
+}
+
+article #partness h1 {
+    font-size: 40px;
+    border-bottom: 3px solid var(--green);
+    color: var(--white);
+    font-weight: normal;
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
+}
+
+article #partness .part-itens {
+    width: 95%;
+    height: 90%;
+    background-color: var(--darkblack);
+    margin: 20px auto;
+}
+
+article #partness .part-itens .box-one,
+article #partness .part-itens .box-two,
+article #partness .part-itens .box-three,
+article #partness .part-itens .box-four,
+article #partness .part-itens .box-five,
+article #partness .part-itens .box-six,
+article #partness .part-itens .box-seven,
+article #partness .part-itens .box-eight,
+article #partness .part-itens .box-nine {
+    width: 30%;
+    height: 30%;
+    margin-top: .5%;
+    margin-bottom: 1%;
+    margin-left: 2.5%;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: -4px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 10px solid white;
+    transition: .5s;
+}
+
+article #partness .part-itens .box-one img,
+article #partness .part-itens .box-two img,
+article #partness .part-itens .box-three img,
+article #partness .part-itens .box-four img,
+article #partness .part-itens .box-five img,
+article #partness .part-itens .box-six img,
+article #partness .part-itens .box-seven img,
+article #partness .part-itens .box-eight img,
+article #partness .part-itens .box-nine img {
+    text-align: center;
+    height: 100%;
+    max-width: 100%;
+    color: var(--black);
+}
+
+article #partness .part-itens .box-one:hover,
+article #partness .part-itens .box-two:hover,
+article #partness .part-itens .box-three:hover,
+article #partness .part-itens .box-four:hover,
+article #partness .part-itens .box-five:hover,
+article #partness .part-itens .box-six:hover,
+article #partness .part-itens .box-seven:hover,
+article #partness .part-itens .box-eight:hover,
+article #partness .part-itens .box-nine:hover {
+    text-align: center;
+    border-bottom: 10px solid var(--green);
+    transition: .5s;
+}
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! END SECTION #PARTNESS CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! START SECTION #CONTACT CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+article #contact {
+    width: 100%;
+    height: 200vh;
+    padding-top: 20px;
+    background-image: url("../img/Cornered-Stairs.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! END SECTION #CONTACT CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! END ARTICLE CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! START FOOTER CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    position: absolute;
+    border: none;
+}
+
+footer .content {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+footer .content .content-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+footer .content .content-left span {
+    font-size: 18px;
+}
+
+footer .content .content-right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+footer .content .content-right span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer .content .content-right img {
+    margin-top: 10px;
+    width: 30px;
+    height: 50px;
+}
+
+footer .content .content-right .face:hover {
+    content: url("../img/facebook-color.svg");
+}
+
+footer .content .content-right .twitter:hover {
+    content: url("../img/twitter-color.svg");
+}
+
+footer .content .content-right .git:hover {
+    content: url("../img/github-color.svg");
+}
+
+footer .content .content-right .insta:hover {
+    content: url("../img/instagram-color.svg");
+}
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! END FOOTER CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+                        !!!!!!!! END CUSTOM CSS !!!!!!!!
+--------------------------------------------------------------------------------*/
+.accordion {
+    background-color: rgb(19, 19, 19);
+    color: var(--white);
+    cursor: default;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    font-family: 'Oxanium' !important;
+  }
+
+  .accordion span {
+      float: right;
+    background-color: var(--green);
+    padding: 10px;
+    color: var(--black);
+    cursor: pointer;
+  }
+
+  .accordion h5 {
+      font-weight: normal;
+      font-size: 18px;
+      letter-spacing: 1px;
+      float: left;
+      padding: 10px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: var(--black);
+    color: var(--green);
+  }
+  
+  .panel {
+    width: 90%;
+    padding: 0px 18px;
+    background-image: linear-gradient(to top, var(--white), var(--platinum));
+    border: 3px solid var(--green);
+    border-radius: 5px;
+    margin: 0px auto 15px auto;
+    color: var(--black);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .panel p {
+      padding: 20px;
+      font-weight: 600;
+      text-align: justify;
+  }
+
+  .panel p span {
+      font-size: 22px;
+      color: darkgreen;
+      font-weight: bold;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+  }
+
+  .accordion-space {
+      width: 100%;
+      height: 50px;
+      background-color: transparent;
+  }
+
+
+  /* FORM */
+
+  textarea {
+      resize: none;
+  }
+
+  .main-block h4 {
+      font-weight: bold;
+      color: green;
+  }
+
+  .main-block h2,
+  .main-block h4 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+    form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px var(--black); 
+    background: var(--white);
+    }
+    .fass {
+    margin: 25px 10px 0;
+    font-size: 72px;
+    color: rgb(0, 160, 0);
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 10px;  
+    }
+    #contact .fa-envelope {
+    transform: rotate(-20deg);
+    }
+    #contact .fa-at , .fa-mail-bulk{
+    transform: rotate(10deg);
+    }
+
+    #contact .fa-envelope, .fa-mail-bulk {
+        padding: 20px;
+    }
+    input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid green;
+    outline: none;
+    font-family: 'Oxanium' !important;
+    font-size: 16px;
+    }
+    input::placeholder {
+    color: rgb(114, 114, 114);
+    }
+    form > button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgb(0, 204, 0);
+    font-weight: bold; 
+    font-size: 16px;
+    color: black;
+    font-family: 'Oxanium' !important;
+    transition: .4s;
+    }
+    button:hover {
+    background: black;
+    color: rgb(0, 175, 0);
+    transition: .4s;
+    }    
+
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        background-color: rgb(0, 204, 0);
+        color: black;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      
+      #myBtn:hover {
+        background-color: white;
+      }
+
+      .space {
+          padding: 5px;
+      }
+/********************************************************
+*************** PAGE MODIFICATIONS **********************
+********************************************************/
+
+::selection {
+    background-color: lightgreen;
+    color: var(--black);
+}

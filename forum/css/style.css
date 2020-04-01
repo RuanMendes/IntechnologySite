@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:200,300,400,500,600,700,800&display=swap');
+
+:root {
+    --green: #34AF2D;
+    --lightgreen: #23CE6B;
+    --white: rgb(247, 255, 244);
+    --black: #000;
+    --platinum: #DFE0E2;
+    --ghostwhite: #F6F8FF;
+    --darkblack: #071013;
+    --niceblack: #222831;
+    --orange: rgb(255, 102, 0);
+    --darkjunglegreen: #1C231F;
+}
+
+
+.main{
+    overflow: auto;
+    padding-bottom: 100px;
+
+}
+
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Oxanium' !important;
+    background-image: linear-gradient(to bottom, var(--darkblack), var(--niceblack)) !important;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+ .solid{
+    border-top: 1px solid rgba(209, 211, 209, 0.986) !important;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: -100px;
+    clear: both;
+    color: var(--platinum);
+    background-color: var(--darkblack);
+}
+
+header{
+    background-color: var(--green);
+}
+
+
+
+.background-divisor{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 90vh;
+    transform: skewY(10deg);
+    transform-origin: 140%;
+    background-image: linear-gradient(135deg,  #a7d129,#616f39);
+}
+
+
+ @media (max-width: 992px) { 
+    .background-divisor{
+        transform: skewY(0);
+        transform-origin: 0;
+        height: 60vh;
+
+    }
+
+    nav{
+        background-color: var(--green) !important;
+    }
+
+
+  }
+
+
+
+thead th{
+    background-color: var(--green) !important;
+    border: 2px solid var(--darkblack) !important;
+    text-align: center;
+
+}
+
+
+thead{
+    border: 5px solid var(--green) !important;
+
+}
+
+.navbar-toggler{
+    background-color: var(--green) !important;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: var(--ghostwhite) ;
+}
+
+.navbar ul li a:hover {
+    transition: .4s;
+    background-color: var(--black) !important;
+    color: var(--green) !important;
+}
+
+
+
+h1{
+    color: black;
+    font-weight: 600 !important;
+
+}
+
+table a{
+    color: var(--green) !important;
+}
+
+     tr:hover{
+    background-color: var(--lightgreen) !important;
+}
+
+#no-hover:hover{
+    background-color: transparent !important;
+
+}
+
+tbody{
+    color: var(--ghostwhite) !important;
+    background-color: var(--niceblack) ;
+}
+
+
+
+.table thead h2{
+    font-weight: 600;
+}
+
+
+tbody a{
+    color: var(--green) !important;
+}
+
+.table-bordered td {
+    border: 2px solid var(--darkblack) !important;
+}
+
+
+.jumbotron{
+    background-color: var(--niceblack) !important;
+    border: 10px solid green;
+}
+
+.jumbotron label{
+    color: var(--lightgreen) !important;
+
+}
+
+.jumbotron h5{
+    background-color: var(--white) !important;
+    color: var(--green) !important;
+
+}
+
+.jumbotron h3,h4{
+    color: var(--green) !important;
+    padding: 5px;
+
+}
+
+.jumbotron ul,li{
+    color: var(--green) !important;
+
+}
+
+
+.jumbotron small{
+    color: var(--ghostwhite) !important;
+}
+
+.jumbotron p{
+    color: var(--green) !important;
+}
+
+.jumbotron a{
+    color: var(--platinum) !important;
+}
+
+.card{
+    background-color: var(--niceblack) !important;
+}
+
+.card-header{
+    background-color: var(--darkblack) !important;
+}
+
+
+.card-body {
+    color: var(--lightgreen) !important;
+}
+
+.card-body a{
+    color: var(--platinum) !important;
+}
+
+#tela-login{
+    background-image: linear-gradient(to right, var(--darkblack), var(--niceblack)) !important;
+
+}
+
+#tela-login .alert{
+    background-color: transparent !important;
+}
+
+.alert{
+    background-color: var(--platinum) !important;
+
+}
+
+footer .content {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+footer .content .content-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+footer .content .content-left span {
+    font-size: 18px;
+}
+
+footer .content .content-right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+footer .content .content-right span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer .content .content-right img {
+    margin-top: 10px;
+    width: 30px;
+    height: 50px;
+}
+
+
+#logo{
+    width: 300px;
+    height: 100px;
+}
+
